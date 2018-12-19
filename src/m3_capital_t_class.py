@@ -4,7 +4,7 @@ A   CapitalT   class and functions that use/test it.
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
          and Jason Ims
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -115,6 +115,7 @@ class CapitalT(object):
     """
 
     def __init__(self, intersection_center, width, height, letter_thickness):
+        self.h_rect = rg.Rectangle((intersection_center.x+width/2),(intersection_center.y+letter_thickness))
         """
         *** See   dimensions.pdf   to understand the following! ***
 
@@ -162,7 +163,7 @@ class CapitalT(object):
           :type letter_thickness:    int
         """
         # ---------------------------------------------------------------------
-        # TODO: 3.
+        # Done: 3.
         #   READ the above specification, including the Example.
         #   Implement this method, using the instance variables
         #      h_rect
